@@ -511,7 +511,7 @@
             </div>
 
             <p class="font-medium text-xs text-slate-500 text-center">Created By: <a href="#"
-                  class="font-bold text-primary">Kang Disman</a>,
+                  class="font-bold text-primary">Kang Disman</a>, <span id="current_year">@</span>
                menggunakan <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind
                   CSS</a></p>
          </div>
@@ -528,6 +528,10 @@
    <!-- Back to top end -->
 
    <script src="dist/js/script.js"></script>
+   <script>
+      const year = document.querySelector('#current_year')
+      year.innerHTML = new Date().getFullYear()
+   </script>
 </body>
 
 </html>
